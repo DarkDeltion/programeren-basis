@@ -1,7 +1,7 @@
 <?php
 
-  $teller=8;
-  $maximum=14;
+  $teller=10;
+  $maximum=4;
 
   echo "Teller is voor de while lus ".$teller."\n";
 
