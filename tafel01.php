@@ -1,8 +1,8 @@
 <?php
 
 $tafel=readline("Welke tafel wil je zien? ");
-$begin=1;
-$eind=10;
+$begin=100;
+$eind=200;
 
 echo "\n\nTafel van $tafel:\n";
 
