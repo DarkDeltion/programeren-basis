@@ -4,7 +4,13 @@ $pogingen = 0;
 
 echo "$random\n";
 
-while (($input = readline("Raad het getal tussen 1 en 100: ")) !== false) {
+while (($input = readline("Raad het getal tussen 1 en 100, om de quiz te stoppen typ 'stop': ")) !== false) {
+
+    if($input === "stop") {
+        echo "de quiz is gestopt\n";
+        break;
+    }
+
     
     if($input < 1) {
         echo "kies een getal tussen 1 en 100\n";
@@ -21,7 +27,7 @@ while (($input = readline("Raad het getal tussen 1 en 100: ")) !== false) {
         }elseif($input > $random) {
             echo "je getal ligt er boven\n";
         } else {
-            echo "je hebt de getal goed geraden in $pogingen pogingen!\n ";
+            echo "je hebt de getal! het was $random. je hebt in $pogingen pogingen geraden!\n ";
             break;
         }
     }
