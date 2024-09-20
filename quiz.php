@@ -7,9 +7,10 @@ $pogingen = 0;
 echo "$random\n";
 
 
-// input van waar je het getal probeert te raden.
+// input van waar je het getal probeert te raden
 while (($input = readline("Raad het getal tussen 1 en 100, om de quiz te stoppen typ 'stop': ")) !== false) {
 
+    $input = strtolower($input);
 
     // checkt als er stop in de readline hierboven staat en stopt de code daarna.
     if($input === "stop") {
@@ -32,9 +33,9 @@ while (($input = readline("Raad het getal tussen 1 en 100, om de quiz te stoppen
 
         // als je probeerdt te raden zegt hij of je te hoog bent of te laag.
         if($input < $random) {
-            echo "Je getal ligt er onder\n";
+            echo "de invoer ligt onder het getal\n";
         }elseif($input > $random) {
-            echo "je getal ligt er boven\n";
+            echo "de invoer ligt boven het getal\n";
         } else {
 
             // als je het goed heb geraden dan zegt hij welk nummer het is en hoeveel pogingen er zijn geweest.
